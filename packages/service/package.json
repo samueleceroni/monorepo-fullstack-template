@@ -1,9 +1,9 @@
 {
-  "name": "@crystal-ball/service",
+  "name": "@monorepo-fullstack-template/service",
   "version": "1.0.0",
-  "description": "Crystal Ball backend service",
+  "description": "Backend service",
   "main": "index.js",
-  "author": "Giovanni Gobbi",
+  "author": "Samuele Ceroni",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@azure/ai-text-analytics": "^5.0.1",
-    "@crystal-ball/common": "^1.0.0",
+    "@monorepo-fullstack-template/common": "^1.0.0",
     "dotenv-flow": "^3.2.0"
   },
   "husky": {

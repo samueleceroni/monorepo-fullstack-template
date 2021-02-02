@@ -1,8 +1,6 @@
-/* eslint-disable no-restricted-syntax */
-
 class MyClass {
-  helloWorld(){
-    console.log("HelloWorld!");
-  }
+  helloWorld = () => {
+    console.log('HelloWorld!');
+  };
 }
-export default { MyClass }
+export default { MyClass };
