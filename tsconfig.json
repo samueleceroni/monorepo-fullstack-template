@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": false,
+    "strict": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@crystal-ball/database": ["./packages/database/src/"],
+      "@crystal-ball/common": ["./packages/common/src"]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": ["node_modules"]
+}

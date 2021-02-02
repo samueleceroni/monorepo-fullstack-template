@@ -1,0 +1,47 @@
+{
+  "name": "crystall-ball-monorepo",
+  "version": "1.0.0",
+  "description": "Crystall Ball Full Stack Codebase",
+  "private": true,
+  "scripts": {
+    "build:web": "lerna run build --scope={@crystal-ball/common,@crystal-ball/web}",
+    "build:service": "lerna run build --scope={@crystal-ball/common,@crystal-ball/service}",
+    "precommit": "lint-staged",
+    "lint": "tsc --noEmit && eslint --quiet --fix packages/*/src/**/*.{ts,tsx}",
+    "postinstall": "if [[ ${NODE_ENV} != \"production\" ]]; then husky install; fi"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/*"
+    ]
+  },
+  "author": "Samuele Ceroni",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^5.0.8",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  },
+  "lint-staged": {
+    "packages/*/src/**/*.{ts,tsx}": [
+      "yarn lint",
+      "prettier --write"
+    ],
+    "**/*.{json,md,html}": [
+      "prettier --write"
+    ]
+  }
+}

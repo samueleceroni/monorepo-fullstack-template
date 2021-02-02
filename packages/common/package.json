@@ -1,0 +1,20 @@
+{
+  "name": "@monorepo-fullstack-template/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "description": "Common utils shared across service and web",
+  "author": "Samuele Ceroni",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "rimraf ./dist && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.16",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.6"
+  }
+}
