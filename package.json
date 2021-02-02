@@ -1,11 +1,11 @@
 {
-  "name": "crystall-ball-monorepo",
+  "name": "monorepo-fullstack-template",
   "version": "1.0.0",
-  "description": "Crystall Ball Full Stack Codebase",
+  "description": "Full Stack Codebase",
   "private": true,
   "scripts": {
-    "build:web": "lerna run build --scope={@crystal-ball/common,@crystal-ball/web}",
-    "build:service": "lerna run build --scope={@crystal-ball/common,@crystal-ball/service}",
+    "build:web": "lerna run build --scope={@monorepo-fullstack-template/common,@monorepo-fullstack-template/web}",
+    "build:service": "lerna run build --scope={@monorepo-fullstack-template/common,@monorepo-fullstack-template/service}",
     "precommit": "lint-staged",
     "lint": "tsc --noEmit && eslint --quiet --fix packages/*/src/**/*.{ts,tsx}",
     "postinstall": "if [[ ${NODE_ENV} != \"production\" ]]; then husky install; fi"
@@ -43,5 +43,11 @@
     "**/*.{json,md,html}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-router": "^5.2.0",
+    "rimraf": "^3.0.2"
   }
 }

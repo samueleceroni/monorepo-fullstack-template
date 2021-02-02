@@ -14,7 +14,7 @@ const PageSelector: React.FC<PageSelectorProps> = (
     [key: string]: boolean;
   } = {};
   props.pages.forEach((page) => {
-    initialValues[page.id] = true;
+    initialValues[page.pid] = true;
   });
   return (
     <Formik
@@ -25,7 +25,7 @@ const PageSelector: React.FC<PageSelectorProps> = (
         <Form>
           <VStack spacing={3} divider={<Divider />}>
             {props.pages.map((page) => (
-              <Field type="boolean" name={page.id} key={page.id}>
+              <Field type="boolean" name={page.pid} key={page.pid}>
                 {({ field }: FieldProps) => (
                   <Flex flexDir="row" alignItems="center">
                     <Checkbox {...field} isChecked={field.value} />
