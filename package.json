@@ -8,7 +8,7 @@
     "build:service": "lerna run build --scope={@monorepo-fullstack-template/common,@monorepo-fullstack-template/service}",
     "precommit": "lint-staged",
     "lint": "tsc --noEmit && eslint --quiet --fix packages/*/src/**/*.{ts,tsx}",
-    "postinstall": "if [[ ${NODE_ENV} != \"production\" ]]; then husky install; fi"
+    "postinstall": "bash postinstall.sh"
   },
   "workspaces": {
     "packages": [

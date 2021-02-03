@@ -1,5 +1,5 @@
 {
-  "name": "@crystal-ball/web",
+  "name": "@monorepo-fullstack-template/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,30 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.1.2",
-    "@crystal-ball/common": "^1.0.0",
-    "@crystal-ball/database": "^1.0.0",
-    "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0",
-    "axios": "^0.21.1",
-    "firebase": "^8.2.2",
-    "formik": "^2.2.6",
-    "framer-motion": "^3.2.0",
-    "next": "^10.0.4",
-    "next-auth": "^3.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^4.1.0",
-    "react-query": "^3.6.0",
-    "react-table": "^7.6.3",
-    "yup": "^0.32.8"
-  },
-  "devDependencies": {
-    "@types/next-auth": "^3.1.19",
-    "@types/node": "^14.14.20",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-table": "^7.0.28",
-    "typescript": "^4.1.3"
+    "next": "10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }

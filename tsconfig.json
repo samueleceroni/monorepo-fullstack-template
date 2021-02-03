@@ -8,8 +8,7 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "paths": {
-      "@crystal-ball/database": ["./packages/database/src/"],
-      "@crystal-ball/common": ["./packages/common/src"]
+      "@monorepo-fullstack-template/common": ["./packages/common/src"]
     },
     "esModuleInterop": true,
     "skipLibCheck": true,
